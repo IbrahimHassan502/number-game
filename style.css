@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6e8ea;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.main-num {
+  font-weight: bold;
+  font-size: 6em;
+  color: #7fb5b5;
+}
+
+button {
+  background-color: #7fb5b5;
+  outline: none;
+  border: none;
+  padding: 24px 48px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+button:active {
+  background-color: #618c8c;
+}
