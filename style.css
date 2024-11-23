@@ -19,10 +19,10 @@ body {
 }
 
 button {
-  background-color: #7fb5b5;
+  background-color: rgb(127, 181, 181);
   outline: none;
   border: none;
-  padding: 24px 48px;
+  padding: 1rem 5rem;
   color: white;
   border-radius: 10px;
   font-weight: bold;
@@ -30,6 +30,17 @@ button {
   text-transform: capitalize;
   cursor: pointer;
 }
+form {
+  display: flex;
+  gap: 1rem;
+}
 button:active {
   background-color: #618c8c;
+}
+input {
+  width: 84px;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(127, 181, 181, 0.2);
 }
