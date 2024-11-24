@@ -6,7 +6,6 @@ const message = document.querySelector("p");
 // const questionNum = 164;
 const chosenNums = [0];
 function generateRandomAndCheck(range) {
-  console.log(chosenNums);
   const randomNum = Math.round(Math.random() * range);
   if (chosenNums.indexOf(randomNum) < 0) {
     chosenNums.push(randomNum);
