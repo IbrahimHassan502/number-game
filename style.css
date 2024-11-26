@@ -16,8 +16,9 @@ body {
   font-weight: bold;
   font-size: 6em;
   color: #7fb5b5;
+  width: max-content;
+  margin-inline: auto;
 }
-
 button {
   background-color: rgb(127, 181, 181);
   outline: none;
@@ -32,15 +33,32 @@ button {
 }
 form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-button:active {
-  background-color: #618c8c;
+.checkbox-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  align-self: self-start;
+  cursor: pointer;
 }
-input {
+input[type="checkbox"] {
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.range-w-button {
+  display: flex;
+  gap: 1rem;
+}
+input[type="number"] {
   width: 84px;
   padding: 1rem 1rem;
   border: none;
   border-radius: 10px;
   background: rgba(127, 181, 181, 0.2);
+}
+button:active {
+  background-color: #618c8c;
 }
