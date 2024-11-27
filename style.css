@@ -17,7 +17,9 @@ body {
   font-size: 6em;
   color: #7fb5b5;
   width: max-content;
+  max-width: 100%;
   margin-inline: auto;
+  text-align: center;
 }
 button {
   background-color: rgb(127, 181, 181);
