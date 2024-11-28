@@ -103,7 +103,11 @@ const qArr = [
   "Send a selfie",
   " Ask whatever you want (I can't say no)",
 ];
-// const questionNum = 164;
+// set fontsize based on user perference
+useList.addEventListener("change", (e) => {
+  mainNum.style.fontSize = e.target.checked ? "3.5em" : "6em";
+});
+// function that generates a random number, check if it's repeated then return it
 const chosenNums = [0];
 function generateRandomAndCheck(range = qArr.length) {
   const randomNum = Math.round(Math.random() * range);
